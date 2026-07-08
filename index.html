@@ -5,18 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Fidexa Group — financial services, trading and consulting. We help clients grow, protect and manage capital with disciplined strategy and market expertise." />
   <title>Fidexa Group — Financial Services, Trading &amp; Consulting</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'%3E%3Crect width='96' height='96' rx='20' fill='%230a0a0b'/%3E%3Cpath d='M32 24 C29 42 29 60 30 72 C31 83 35 88 41 90' stroke='%23f7941e' stroke-width='15' stroke-linecap='round' fill='none'/%3E%3Cpath d='M27 24 L80 19' stroke='%238cc63f' stroke-width='15' stroke-linecap='round'/%3E%3Cpath d='M35 51 L66 47' stroke='%232e7fd4' stroke-width='14' stroke-linecap='round'/%3E%3C/svg%3E" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'%3E%3Crect width='96' height='96' rx='16' fill='%23111111'/%3E%3Cpath d='M32 24 C29 42 29 60 30 72 C31 83 35 88 41 90' stroke='%23f7941e' stroke-width='15' stroke-linecap='round' fill='none'/%3E%3Cpath d='M27 24 L80 19' stroke='%238cc63f' stroke-width='15' stroke-linecap='round'/%3E%3Cpath d='M35 51 L66 47' stroke='%232e7fd4' stroke-width='14' stroke-linecap='round'/%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Animated background -->
-  <div class="bg-grid" aria-hidden="true"></div>
-  <div class="bg-glow bg-glow--1" aria-hidden="true"></div>
-  <div class="bg-glow bg-glow--2" aria-hidden="true"></div>
-
   <!-- Header -->
   <header class="header" id="header">
     <div class="container header__inner">
@@ -43,16 +38,18 @@
       </button>
     </div>
   </header>
+  <div class="brand-bar" aria-hidden="true"><span></span><span></span><span></span></div>
 
   <main>
     <!-- Hero -->
     <section class="hero" id="hero">
+      <div class="hero__shape" aria-hidden="true"></div>
       <div class="container hero__inner">
         <div class="badge reveal">
           <span class="badge__dot"></span> Financial Services · Trading · Consulting
         </div>
         <h1 class="hero__title reveal">
-          Grow, protect and <span class="grad">master your capital</span>
+          Grow, protect and <span class="accent">master your capital</span>
         </h1>
         <p class="hero__sub reveal">
           Fidexa Group is a financial services, trading and consulting firm.
@@ -96,37 +93,37 @@
         </div>
         <div class="grid grid--3">
           <article class="card reveal">
-            <div class="card__icon">💼</div>
+            <div class="card__num"><span>01</span></div>
             <h3>Wealth &amp; Asset Management</h3>
             <p>Personalized portfolios built around your goals, time horizon and risk appetite — managed with discipline and care.</p>
             <ul class="card__list"><li>Portfolio construction</li><li>Retirement &amp; estate planning</li><li>Tax-efficient strategies</li></ul>
           </article>
           <article class="card reveal">
-            <div class="card__icon">📈</div>
+            <div class="card__num"><span>02</span></div>
             <h3>Trading &amp; Brokerage</h3>
             <p>Access global markets with competitive execution, deep liquidity and research-driven trade ideas across asset classes.</p>
             <ul class="card__list"><li>Multi-asset execution</li><li>Algorithmic &amp; smart order routing</li><li>Market &amp; liquidity access</li></ul>
           </article>
           <article class="card reveal">
-            <div class="card__icon">🧭</div>
+            <div class="card__num"><span>03</span></div>
             <h3>Financial Consulting</h3>
             <p>Independent, senior advice on the decisions that shape your financial future — clear, actionable and conflict-free.</p>
             <ul class="card__list"><li>Financial planning</li><li>Corporate &amp; M&amp;A advisory</li><li>Capital structuring</li></ul>
           </article>
           <article class="card reveal">
-            <div class="card__icon">🛡️</div>
+            <div class="card__num"><span>04</span></div>
             <h3>Risk Management</h3>
             <p>Protect what you've built. We identify, hedge and monitor risk across markets, currencies and portfolios.</p>
             <ul class="card__list"><li>Hedging strategies</li><li>Exposure &amp; scenario analysis</li><li>Compliance &amp; controls</li></ul>
           </article>
           <article class="card reveal">
-            <div class="card__icon">🏦</div>
+            <div class="card__num"><span>05</span></div>
             <h3>Corporate Finance</h3>
             <p>Fundraising, valuation and strategic transactions — the financial engine behind growing and scaling businesses.</p>
             <ul class="card__list"><li>Fundraising &amp; debt advisory</li><li>Valuation &amp; due diligence</li><li>Mergers &amp; acquisitions</li></ul>
           </article>
           <article class="card reveal">
-            <div class="card__icon">🔎</div>
+            <div class="card__num"><span>06</span></div>
             <h3>Market Research &amp; Insights</h3>
             <p>Data-driven analysis and macro views that turn market noise into confident, well-timed decisions.</p>
             <ul class="card__list"><li>Macro &amp; sector research</li><li>Quantitative analysis</li><li>Actionable market outlooks</li></ul>
@@ -145,18 +142,22 @@
         </div>
         <div class="grid grid--2">
           <article class="solution reveal">
+            <span class="solution__no">01</span>
             <h3>Private &amp; High-Net-Worth Clients</h3>
             <p>Discreet wealth management, financial planning and bespoke investment strategies for individuals and families.</p>
           </article>
           <article class="solution reveal">
+            <span class="solution__no">02</span>
             <h3>Corporates &amp; SMEs</h3>
             <p>Treasury, corporate finance and advisory that support growth, financing and strategic transactions.</p>
           </article>
           <article class="solution reveal">
+            <span class="solution__no">03</span>
             <h3>Institutional Investors</h3>
             <p>Trade execution, research and risk solutions for funds, family offices and professional investors.</p>
           </article>
           <article class="solution reveal">
+            <span class="solution__no">04</span>
             <h3>Founders &amp; Startups</h3>
             <p>Fundraising strategy, valuation and financial modeling to help early-stage companies scale with confidence.</p>
           </article>
@@ -190,19 +191,19 @@
         </div>
         <div class="grid grid--3">
           <article class="case reveal">
-            <div class="case__metric grad">+18%</div>
+            <div class="case__metric accent">+18%</div>
             <h3>Diversified portfolio outperformance</h3>
             <p>A multi-asset strategy delivered consistent risk-adjusted returns above benchmark over a full market cycle.</p>
             <span class="tag">Wealth Management</span>
           </article>
           <article class="case reveal">
-            <div class="case__metric grad">$40M</div>
+            <div class="case__metric accent">$40M</div>
             <h3>Growth capital raised</h3>
             <p>Advised a scaling business through a successful funding round, from valuation to closing the deal.</p>
             <span class="tag">Corporate Finance</span>
           </article>
           <article class="case reveal">
-            <div class="case__metric grad">-30%</div>
+            <div class="case__metric accent">-30%</div>
             <h3>Reduced portfolio drawdown</h3>
             <p>A tailored hedging program cut downside exposure while preserving upside during volatile markets.</p>
             <span class="tag">Risk Management</span>
@@ -228,9 +229,9 @@
         </div>
         <div class="about__panel reveal">
           <div class="values">
-            <div class="value"><span class="value__k grad">Integrity</span><p>We put your interests first, always — with honest advice and full transparency.</p></div>
-            <div class="value"><span class="value__k grad">Discipline</span><p>Rigorous strategy and risk management guide every decision we make on your behalf.</p></div>
-            <div class="value"><span class="value__k grad">Expertise</span><p>Deep, hands-on knowledge of global markets across every asset class we serve.</p></div>
+            <div class="value"><span class="value__k accent">Integrity</span><p>We put your interests first, always — with honest advice and full transparency.</p></div>
+            <div class="value"><span class="value__k accent">Discipline</span><p>Rigorous strategy and risk management guide every decision we make on your behalf.</p></div>
+            <div class="value"><span class="value__k accent">Expertise</span><p>Deep, hands-on knowledge of global markets across every asset class we serve.</p></div>
           </div>
         </div>
       </div>
@@ -240,7 +241,9 @@
     <section class="section" id="contact">
       <div class="container">
         <div class="cta reveal">
-          <div class="cta__glow" aria-hidden="true"></div>
+          <svg class="cta__shape" viewBox="0 0 300 500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+            <path d="M40 20 C10 140 10 300 40 420 C60 480 110 500 160 480" stroke="#F7941E" stroke-width="70" stroke-linecap="round" fill="none"/>
+          </svg>
           <div class="cta__content">
             <h2>Let's plan your financial future</h2>
             <p>Tell us about your goals. We'll get back within one business day to arrange a confidential consultation.</p>
