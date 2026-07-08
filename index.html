@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Fidexa Group — AI software development company. We build intelligent products: LLM apps, computer vision, MLOps, and data platforms that turn AI into business value." />
+  <title>Fidexa Group — AI Software Development</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Animated background -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--1" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--2" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#hero" class="logo">
+        <span class="logo__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 2 3 9v14l13 7 13-7V9L16 2Z" stroke="url(#lg)" stroke-width="1.5"/>
+            <circle cx="16" cy="16" r="3.5" fill="url(#lg)"/>
+            <path d="M16 6.5v6M16 19.5v6M6.5 11.2l6.5 3.6M18.9 17.2l6.6 3.6M25.5 11.2 19 14.8M13 17.2 6.4 20.8" stroke="url(#lg)" stroke-width="1.2" opacity=".6"/>
+            <defs><linearGradient id="lg" x1="3" y1="2" x2="29" y2="30" gradientUnits="userSpaceOnUse"><stop stop-color="#6366f1"/><stop offset="1" stop-color="#22d3ee"/></linearGradient></defs>
+          </svg>
+        </span>
+        <span class="logo__text">Fidexa<span>Group</span></span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#services">Services</a>
+        <a href="#solutions">Solutions</a>
+        <a href="#process">Process</a>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+      </nav>
+      <a href="#contact" class="btn btn--primary btn--sm header__cta">Start a project</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container hero__inner">
+        <div class="badge reveal">
+          <span class="badge__dot"></span> Applied AI &amp; Machine Learning Engineering
+        </div>
+        <h1 class="hero__title reveal">
+          We build <span class="grad">intelligent software</span> that thinks with your business
+        </h1>
+        <p class="hero__sub reveal">
+          Fidexa Group is an AI-first development company. From LLM-powered products and
+          computer vision to production MLOps and data platforms — we ship AI that
+          delivers measurable value, not demos.
+        </p>
+        <div class="hero__actions reveal">
+          <a href="#contact" class="btn btn--primary">Book a discovery call</a>
+          <a href="#solutions" class="btn btn--ghost">Explore solutions</a>
+        </div>
+        <div class="hero__stats reveal">
+          <div class="stat"><span class="stat__num" data-count="60">0</span><span class="stat__plus">+</span><p>AI products shipped</p></div>
+          <div class="stat"><span class="stat__num" data-count="12">0</span><p>Countries served</p></div>
+          <div class="stat"><span class="stat__num" data-count="98">0</span><span class="stat__plus">%</span><p>Client retention</p></div>
+          <div class="stat"><span class="stat__num" data-count="24">0</span><span class="stat__plus">/7</span><p>Model monitoring</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trusted / marquee -->
+    <section class="trusted">
+      <div class="container">
+        <p class="trusted__label">Our stack &amp; ecosystem</p>
+        <div class="marquee">
+          <div class="marquee__track">
+            <span>OpenAI</span><span>Anthropic</span><span>PyTorch</span><span>TensorFlow</span><span>LangChain</span><span>Hugging Face</span><span>Kubernetes</span><span>AWS</span><span>GCP</span><span>Vector DBs</span><span>Ray</span><span>MLflow</span>
+            <span>OpenAI</span><span>Anthropic</span><span>PyTorch</span><span>TensorFlow</span><span>LangChain</span><span>Hugging Face</span><span>Kubernetes</span><span>AWS</span><span>GCP</span><span>Vector DBs</span><span>Ray</span><span>MLflow</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">What we do</span>
+          <h2 class="section__title">Full-cycle AI engineering</h2>
+          <p class="section__lead">One partner from strategy to production — we design, build, and operate AI systems end to end.</p>
+        </div>
+        <div class="grid grid--3">
+          <article class="card reveal">
+            <div class="card__icon">🧠</div>
+            <h3>Generative AI &amp; LLM Apps</h3>
+            <p>RAG systems, AI agents, copilots and chat assistants grounded in your data — with guardrails, evals and cost control.</p>
+            <ul class="card__list"><li>Retrieval-augmented generation</li><li>Autonomous agents &amp; tool use</li><li>Fine-tuning &amp; prompt engineering</li></ul>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">👁️</div>
+            <h3>Computer Vision</h3>
+            <p>Detection, classification, OCR and video analytics deployed to the cloud or the edge with real-time performance.</p>
+            <ul class="card__list"><li>Object detection &amp; tracking</li><li>Document &amp; image understanding</li><li>Edge &amp; on-device inference</li></ul>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">📊</div>
+            <h3>Data &amp; ML Platforms</h3>
+            <p>Reliable pipelines, feature stores and analytics that turn raw data into predictions you can trust.</p>
+            <ul class="card__list"><li>Data engineering &amp; ETL</li><li>Predictive &amp; forecasting models</li><li>Recommendation systems</li></ul>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">⚙️</div>
+            <h3>MLOps &amp; Infrastructure</h3>
+            <p>Ship models like software — CI/CD, monitoring, drift detection and scalable serving on any cloud.</p>
+            <ul class="card__list"><li>Model deployment &amp; serving</li><li>Observability &amp; drift alerts</li><li>Cost &amp; latency optimization</li></ul>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">🚀</div>
+            <h3>Product Engineering</h3>
+            <p>The software around the model — web, mobile and APIs crafted with production-grade quality and design.</p>
+            <ul class="card__list"><li>Web &amp; mobile applications</li><li>Cloud-native backends</li><li>UX for AI experiences</li></ul>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">🧭</div>
+            <h3>AI Strategy &amp; Advisory</h3>
+            <p>Roadmaps, feasibility studies and rapid prototypes to find where AI creates real ROI for your business.</p>
+            <ul class="card__list"><li>Opportunity assessment</li><li>Proof of concept in weeks</li><li>Responsible AI &amp; compliance</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solutions -->
+    <section class="section section--alt" id="solutions">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Industry solutions</span>
+          <h2 class="section__title">AI tailored to your domain</h2>
+          <p class="section__lead">We combine deep ML expertise with industry context to deliver outcomes that matter.</p>
+        </div>
+        <div class="grid grid--2">
+          <article class="solution reveal">
+            <h3>FinTech &amp; Banking</h3>
+            <p>Fraud detection, credit scoring, document automation and AI copilots for analysts and support teams.</p>
+          </article>
+          <article class="solution reveal">
+            <h3>Healthcare &amp; Life Sciences</h3>
+            <p>Medical imaging, clinical NLP, patient triage assistants and privacy-preserving data workflows.</p>
+          </article>
+          <article class="solution reveal">
+            <h3>Retail &amp; E-commerce</h3>
+            <p>Personalization engines, demand forecasting, visual search and conversational shopping assistants.</p>
+          </article>
+          <article class="solution reveal">
+            <h3>Manufacturing &amp; Logistics</h3>
+            <p>Predictive maintenance, quality inspection, route optimization and digital-twin analytics.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">How we work</span>
+          <h2 class="section__title">From idea to production in weeks</h2>
+          <p class="section__lead">A transparent, iterative process that de-risks AI and gets you to value fast.</p>
+        </div>
+        <div class="timeline">
+          <div class="step reveal"><span class="step__no">01</span><h3>Discover</h3><p>Workshops to map your data, use cases and success metrics. We identify the highest-ROI opportunities.</p></div>
+          <div class="step reveal"><span class="step__no">02</span><h3>Prototype</h3><p>A working proof of concept in 2–4 weeks to validate feasibility with real data before major investment.</p></div>
+          <div class="step reveal"><span class="step__no">03</span><h3>Build</h3><p>Production engineering with rigorous evals, testing and design — models and software shipped together.</p></div>
+          <div class="step reveal"><span class="step__no">04</span><h3>Scale &amp; Operate</h3><p>Deploy, monitor and continuously improve. We keep models accurate, fast and cost-efficient over time.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work / case studies -->
+    <section class="section section--alt" id="work">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Selected work</span>
+          <h2 class="section__title">Outcomes we're proud of</h2>
+        </div>
+        <div class="grid grid--3">
+          <article class="case reveal">
+            <div class="case__metric grad">-42%</div>
+            <h3>Support automation for a SaaS leader</h3>
+            <p>An LLM agent grounded in product docs deflected nearly half of inbound tickets while lifting CSAT.</p>
+            <span class="tag">Generative AI</span>
+          </article>
+          <article class="case reveal">
+            <div class="case__metric grad">3.2×</div>
+            <h3>Demand forecasting for retail chain</h3>
+            <p>A forecasting platform tripled inventory accuracy and cut stockouts across 400+ stores.</p>
+            <span class="tag">Predictive ML</span>
+          </article>
+          <article class="case reveal">
+            <div class="case__metric grad">99.4%</div>
+            <h3>Defect detection on the factory floor</h3>
+            <p>Edge computer vision inspects components in real time, reaching near-human accuracy 24/7.</p>
+            <span class="tag">Computer Vision</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container about">
+        <div class="about__text reveal">
+          <span class="eyebrow">Who we are</span>
+          <h2 class="section__title">An AI engineering team you can build a company on</h2>
+          <p>Fidexa Group is a team of ML engineers, data scientists and product builders obsessed with shipping AI that works in the real world. We pair research-grade modeling with disciplined software engineering — so what we build is not just smart, but reliable, secure and maintainable.</p>
+          <p>We work as an embedded partner: transparent, senior and outcome-driven. Whether you need a rapid prototype or a long-term AI platform, we bring the depth to get it right.</p>
+          <ul class="checklist">
+            <li>Senior, dedicated engineers — no hand-offs</li>
+            <li>Responsible &amp; secure AI by design</li>
+            <li>Clear pricing and weekly demos</li>
+            <li>Ownership of code, models and IP stays with you</li>
+          </ul>
+        </div>
+        <div class="about__panel reveal">
+          <div class="values">
+            <div class="value"><span class="value__k grad">Craft</span><p>We sweat evals, latency and edge cases so your users never see the seams.</p></div>
+            <div class="value"><span class="value__k grad">Speed</span><p>Lean teams and rapid iteration get you to production without bloat.</p></div>
+            <div class="value"><span class="value__k grad">Trust</span><p>Full transparency, secure practices and honest advice — even when it's "don't use AI here."</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA / Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="cta reveal">
+          <div class="cta__glow" aria-hidden="true"></div>
+          <div class="cta__content">
+            <h2>Let's build something intelligent</h2>
+            <p>Tell us about your challenge. We'll get back within one business day with concrete next steps.</p>
+          </div>
+          <form class="cta__form" id="contactForm" novalidate>
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Jane Doe" required />
+            </div>
+            <div class="field">
+              <label for="email">Work email</label>
+              <input type="email" id="email" name="email" placeholder="jane@company.com" required />
+            </div>
+            <div class="field field--full">
+              <label for="message">What do you want to build?</label>
+              <textarea id="message" name="message" rows="3" placeholder="We'd like an AI assistant for our customer support…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--block">Send message</button>
+            <p class="form__note" id="formNote" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#hero" class="logo">
+          <span class="logo__text">Fidexa<span>Group</span></span>
+        </a>
+        <p>Applied AI &amp; machine learning engineering. We turn AI into products that ship.</p>
+      </div>
+      <div class="footer__cols">
+        <div class="footer__col">
+          <h4>Services</h4>
+          <a href="#services">Generative AI</a>
+          <a href="#services">Computer Vision</a>
+          <a href="#services">Data &amp; ML Platforms</a>
+          <a href="#services">MLOps</a>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#process">Process</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer__col">
+          <h4>Get in touch</h4>
+          <a href="mailto:hello@fidexa-group.com">hello@fidexa-group.com</a>
+          <a href="#contact">Start a project</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year"></span> Fidexa Group. All rights reserved.</p>
+      <p>Built with intelligence, shipped with care.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
