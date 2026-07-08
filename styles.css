@@ -228,6 +228,19 @@ a { color: inherit; text-decoration: none; }
 .value__k { font-family: "Space Grotesk", sans-serif; font-size: 1.25rem; font-weight: 700; display: block; margin-bottom: 8px; color: var(--ink); }
 .value p { color: var(--ink-dim); font-size: 14.5px; }
 
+/* ===== Team ===== */
+.team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+.member { background: var(--bg); padding: 0 0 24px; border-top: 4px solid transparent; transition: transform 0.25s var(--ease); }
+.member:nth-child(1) { border-top-color: var(--green); }
+.member:nth-child(2) { border-top-color: var(--blue); }
+.member:nth-child(3) { border-top-color: var(--orange); }
+.member:nth-child(4) { border-top-color: var(--green); }
+.member__photo { aspect-ratio: 640 / 640; overflow: hidden; margin-bottom: 18px; }
+.member__photo img { width: 100%; height: 100%; object-fit: cover; display: block; filter: saturate(0.92); transition: transform 0.4s var(--ease); }
+.member:hover .member__photo img { transform: scale(1.04); }
+.member h3 { font-size: 1.08rem; margin: 0 22px 4px; color: var(--ink); }
+.member p { font-size: 13px; color: var(--ink-dim); margin: 0 22px; text-transform: uppercase; letter-spacing: 0.05em; }
+
 /* ===== CTA / Contact (dark band) ===== */
 #contact.section { background: var(--ink); color: #fff; border-top: 1px solid var(--ink); border-bottom: none; overflow: hidden; }
 
@@ -274,6 +287,7 @@ a { color: inherit; text-decoration: none; }
 /* ===== Responsive ===== */
 @media (max-width: 960px) {
   .grid--3 { grid-template-columns: repeat(2, 1fr); }
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
   .timeline { grid-template-columns: repeat(2, 1fr); }
   .about { grid-template-columns: 1fr; gap: 40px; }
   .cta { grid-template-columns: 1fr; }
@@ -292,6 +306,7 @@ a { color: inherit; text-decoration: none; }
   .stat:nth-child(2n+1) { border-left: none; padding-left: 0; }
   .stat:nth-child(-n+2) { border-top: none; }
   .grid--3, .grid--2 { grid-template-columns: 1fr; }
+  .team-grid { grid-template-columns: 1fr; }
   .timeline { grid-template-columns: 1fr; }
   .cta__form { grid-template-columns: 1fr; }
   .footer__cols { grid-template-columns: 1fr; gap: 20px; }
